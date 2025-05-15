@@ -1,0 +1,268 @@
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --blue: #264065;
+    --grey: #909090;
+    --cyan: #A9D6CB;
+    --white: #FAF8F5;
+    --black: #070D15;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+body {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    color: var(--blue);
+    background-color: var(--white);
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    height: 80%;
+    background-image: url("/img/lotus-marca-de-agua.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: -70% 30%;
+    background-color: var(--cyan);
+    z-index: -1;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    bottom: 50%;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    z-index: -2;
+}
+.container {
+    padding: 0 16px;
+}
+
+main {
+    background-image: url("/img/beauty-woman.png");
+    background-repeat: no-repeat;
+    background-size: 992px;
+    height: 100vh;
+    bottom: 50px;
+    background-position: 80% 60%;
+    position: relative;
+    z-index: 1;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-left: 160px;
+    margin-right: 150px;
+}
+
+
+.header_logo img {
+    width: 150px;
+}
+  
+.nav-primary ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+ 
+.nav-primary a {
+    text-decoration: none;
+    color: var(--blue);
+}
+  
+.nav-primary a:hover {
+    text-decoration: underline;
+}
+
+.header_login ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+  
+.header_login a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.header_login a:hover {
+    text-decoration: underline;
+}
+a.btn {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  
+.hero {
+    max-width: 700px;
+    padding: 16px;
+    gap: 20px;
+    margin-left: 160px;
+}
+
+.hero__description {
+    margin-bottom: 38px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    margin-top: 80px;
+}
+  
+p {
+    color: var(--grey);
+    max-width: 600px;
+    padding-bottom: 0;
+}
+  
+.hero__buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+  
+button {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+button.btn2 {
+    background-color: transparent;
+    color: var(--blue);
+    padding: 0;
+}
+  
+.video-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.play-icon img {
+    width: 30px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  
+.services {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 16px 16px;
+    width: fit-content;
+    margin-left: 160px;
+}
+  
+.services article {
+    text-align: center;
+    padding: 15px;
+    width: 180px;
+}
+  
+.services img {
+    width: 72px;
+    background-color: var(--cyan);
+    padding: 5px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+  
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+  
+.services p {
+    font-size: 14px;
+    color: var(--grey);
+}
+  
+.reviews {
+    position: absolute;
+    right: 40px;
+    top: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+  
+.reviews article {
+    background: rgba(237, 242, 242, 0.669);
+    padding: 20px;
+    border-radius: 15px;
+    width: 290px;
+}
+
+.reviews article.rw1 {
+    position: relative;
+    right: 95px;
+    top: -95px;
+    display: flex;
+    flex-direction: column;
+}
+.reviews article.rw2 {
+    position: relative;
+    left: -220px;
+    top: -100px;
+    display: flex;
+    flex-direction: column;
+}
+.reviews p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+  
+.reviews h4 {
+    font-size: 14px;
+    color: var(--blue);
+    font-weight: 700;
+}
+  
+.reviews img {
+    width: 15px;
+    margin-bottom: 10px;
+}
+  
